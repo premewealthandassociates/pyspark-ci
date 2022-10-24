@@ -1,10 +1,10 @@
-name: Test package
+name: Test action
 on:
   workflow_dispatch:
 jobs:
   container:
     runs-on: jupyter/pyspark-notebook
     steps:
-      - run: |
-          echo $JAVA_HOME
-        name: ran in container
+    - name: ran in container
+      run: |
+        echo $JAVA_HOME

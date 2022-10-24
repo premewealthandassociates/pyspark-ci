@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     container: jupyter/pyspark-notebook
     steps:
+    - uses: actions/checkout@v3
     - name: ran in container
       run: |
         ls -la

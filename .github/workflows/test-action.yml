@@ -9,7 +9,7 @@ jobs:
       options: --user root
     steps:
     - uses: actions/checkout@v3
-    - name: ran in container
+    - name: Install package with dev dependencies
       run: |
-        ls -la
-        echo Hello
+        python3 -m pip install --upgrade pip
+        python3 -m venv .venv

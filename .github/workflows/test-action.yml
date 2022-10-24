@@ -14,7 +14,7 @@ jobs:
         python3 -m venv .venv
     - name: Activate virtual environment
       run: |
-        source .venv/bin/activate
+        . .venv/bin/activate
     - name: Install package
       run: |
         pip install -e .[dev]

@@ -2,8 +2,9 @@ name: Test action
 on:
   workflow_dispatch:
 jobs:
-  container:
-    runs-on: jupyter/pyspark-notebook
+  container-job:
+    runs-on: ubuntu-latest
+    container: jupyter/pyspark-notebook
     steps:
     - name: ran in container
       run: |

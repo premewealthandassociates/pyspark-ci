@@ -4,7 +4,9 @@ on:
 jobs:
   container-job:
     runs-on: ubuntu-latest
-    container: jupyter/pyspark-notebook
+    container:
+      image: jupyter/pyspark-notebook
+      options: --user root
     steps:
     - uses: actions/checkout@v3
     - name: ran in container
